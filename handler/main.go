@@ -75,8 +75,8 @@ func lambdaHanlder(req events.APIGatewayProxyRequest) (events.APIGatewayProxyRes
 		}
 	}
 
-	// Return good response
-	return addedIPSuccessfully(), nil
+	// If user didn't match in the above loop, they're not authorized
+	return unauthorized(), nil
 }
 
 func checkIPRegex(ip string) bool {
