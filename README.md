@@ -20,7 +20,7 @@ The code in `cleanup/` handles incoming DynamoDB Streams data.
 
 ## Invocation 
 
-Example: `/lsmdb staging rds 1.1.1.1`
+Example: `/db staging rds 1.1.1.1`
 ## TODO
 
 Pull port in from map or environment to make this tool more extensible.
@@ -49,7 +49,7 @@ None required
 
 ### Slack App
 
-LSM Slack App ID: [A0196DA51MF](https://api.slack.com/apps/A0196DA51MF)
+Slack App ID:
 
 ### Examples
 
@@ -58,17 +58,17 @@ LSM Slack App ID: [A0196DA51MF](https://api.slack.com/apps/A0196DA51MF)
 ```json
 {
   "SecurityGroups": [{
-      "Description": "WikiJS web server security group",
-      "GroupId": "sg-023d321b2df6e1b6d",
-      "GroupName": "wikijs-web",
+      "Description": "",
+      "GroupId": "",
+      "GroupName": "",
       "IpPermissions": [{
           "IpProtocol": "-1",
           "IpRanges": [{
-              "CidrIp": "50.232.79.90/32",
-              "Description": "BHI"
+              "CidrIp": "",
+              "Description": ""
             },{
-              "CidrIp": "65.144.21.90/32",
-              "Description": "BHI"
+              "CidrIp": "",
+              "Description": ""
             }]
         },{
           "FromPort": 443,
@@ -86,15 +86,15 @@ LSM Slack App ID: [A0196DA51MF](https://api.slack.com/apps/A0196DA51MF)
               "Description": "All"
             }]
         }],
-      "OwnerId": "156104291684",
+      "OwnerId": "",
       "Tags": [{
           "Key": "app_name",
-          "Value": "wikijs"
+          "Value": ""
         },{
           "Key": "Name",
-          "Value": "wikijs-web"
+          "Value": ""
         }],
-      "VpcId": "vpc-094b84692c24106bb"
+      "VpcId": ""
     }]
 }
 ```
